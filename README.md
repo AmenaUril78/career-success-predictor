@@ -202,20 +202,6 @@ Visit `http://localhost:8501` in your browser.
 
 ---
 
-## 📸 Screenshots
-
-### Application Interface:
-![App Screenshot 1](https://via.placeholder.com/800x400?text=Student+Input+Form)
-*Student profile input form with interactive sliders*
-
-![App Screenshot 2](https://via.placeholder.com/800x400?text=Prediction+Results)
-*Real-time prediction results with risk assessment*
-
-![App Screenshot 3](https://via.placeholder.com/800x400?text=Recommendations)
-*Personalized career recommendations and skill priorities*
-
----
-
 ## 🎓 Academic Context
 
 **Course:** CIS 508 - Machine Learning in Business  
