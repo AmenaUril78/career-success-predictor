@@ -240,8 +240,8 @@ This project is created for educational purposes as part of academic coursework.
 ## 👤 Author
 
 **Amena Uril**  
-Arizona State University  
-CIS 508 - Machine Learning in Business  
+CIS 508 - Machine Learning in Business
+W. P. Carey School of Business - Arizona State University 
 
 ---
 
