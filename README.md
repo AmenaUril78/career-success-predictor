@@ -216,42 +216,6 @@ All experiments logged in **MLflow (Databricks)** with complete tracking:
 
 ---
 
-## 📊 Usage Example
-
-### Input Student Profile:
-```python
-{
-    "gender": "M",
-    "ssc_percentage": 78.0,
-    "hsc_percentage": 78.0,
-    "degree_percentage": 78.0,
-    "work_experience": "No",
-    "test_score": 65.0,
-    "mba_percentage": 86.0,
-    "specialization": "Mkt&HR"
-}
-```
-
-### Output Prediction:
-```python
-{
-    "placement_probability": 0.536,
-    "risk_level": "MEDIUM RISK",
-    "recommendation": "NEEDS TARGETED SUPPORT",
-    "key_factors": [
-        "❌ No work experience (missing 40% weight)",
-        "✅ Strong MBA performance (86%)"
-    ],
-    "actions": [
-        "1. Seek internship opportunities - Critical 40% weight factor",
-        "2. Improve employability test scores - Target 75%+",
-        "3. Build professional network"
-    ]
-}
-```
-
----
-
 ## 🎓 Key Learnings
 
 1. **Comprehensive Model Exploration:** Testing multiple algorithms reveals optimal solutions
