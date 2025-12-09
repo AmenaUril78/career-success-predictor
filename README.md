@@ -190,9 +190,10 @@ career-success-predictor/
 - **AUC-ROC:** 0.9256 ⭐ (Excellent)
 
 **Confusion Matrix:**
-Actual,Predicted Not Placed,Predicted Placed
-Not Placed,10,4
-Placed,2,27
+| **Actual** | **Predicted Not Placed** | **Predicted Placed** |
+| :---: | :---: | :---: |
+| Not Placed | 10 | 4 |
+| Placed | 2 | 27 |
 
 **Interpretation:**
 - 37 correct predictions out of 43 (86% accuracy)
