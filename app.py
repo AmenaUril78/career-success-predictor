@@ -278,21 +278,6 @@ if predict_button:
         st.markdown("- **Industry Knowledge**: Domain-specific certifications")
         st.markdown("- **AI Literacy**: Understanding AI tools and applications")
         st.markdown("- **Portfolio Building**: Projects, case studies, presentations")
-    
-    # Model confidence - UPDATED SECTION
-    st.markdown("---")
-    st.info(f"""
-        **Model Information:**  
-        - **Model:** Random Forest (Hyperparameter-Optimized)
-        - **Test Accuracy:** 86.05%
-        - **Precision:** 87.10%
-        - **Recall:** 93.10%
-        - **F1-Score:** 0.8710
-        - **AUC-ROC:** 0.9256
-        - **Features:** {len(feature_columns)} features (13 original + 11 engineered)
-        - **Training:** Comprehensive model exploration across 7 algorithms
-        - This prediction is based on historical placement data with SMOTE balancing.
-    """)
 
 else:
     # Welcome screen
@@ -319,7 +304,7 @@ else:
         ### 📈 Model Performance:
     """)
     
-    # Display model metrics - UPDATED SECTION
+    # Display model metrics
     metrics_col1, metrics_col2, metrics_col3, metrics_col4 = st.columns(4)
     metrics_col1.metric("Accuracy", "86.1%")
     metrics_col2.metric("Precision", "87.1%")
