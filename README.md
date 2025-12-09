@@ -54,12 +54,12 @@ This project involved systematic comparison of **7 classification algorithms** w
 | Rank | Model | F1-Score | AUC-ROC | Accuracy | Status |
 |------|-------|----------|---------|----------|--------|
 | 1 | **Logistic Regression** | **0.8966** 🥇 | 0.9282 | 88.37% | Evaluated |
-| 1 | **Naive Bayes** | **0.8966** 🥇 | 0.9231 | 88.37% | Evaluated |
-| 2 | SVM | 0.8772 | 0.9256 | 86.05% | Evaluated |
-| 3 | **Random Forest** | **0.8710** | **0.9256** | **86.05%** | **🚀 Deployed** |
-| 4 | XGBoost | 0.8667 | **0.9410** 🏆 | 86.05% | Evaluated |
-| 5 | Neural Network | 0.8387 | 0.8179 | 83.72% | Evaluated |
-| 6 | k-NN | 0.8214 | 0.8744 | 81.40% | Evaluated |
+| 2 | **Naive Bayes** | **0.8966** 🥇 | 0.9231 | 88.37% | Evaluated |
+| 3 | SVM | 0.8772 | 0.9256 | 86.05% | Evaluated |
+| 4 | **Random Forest** | **0.8710** | **0.9256** | **86.05%** | **🚀 Deployed** |
+| 5 | XGBoost | 0.8667 | **0.9410** 🏆 | 86.05% | Evaluated |
+| 6 | Neural Network | 0.8387 | 0.8179 | 83.72% | Evaluated |
+| 7 | k-NN | 0.8214 | 0.8744 | 81.40% | Evaluated |
 
 ### Model Selection Rationale
 
