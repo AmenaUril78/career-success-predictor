@@ -278,7 +278,7 @@ Arizona State University
 ## 📞 Contact & Support
 
 **Live Application:** [Career Success Predictor](https://amenauril78-career-success-predictor-app-vnwdxj.streamlit.app)  
-**GitHub Repository:** [career-success-predictor] (https://github.com/AmenaUril78/career-success-predictor)
+**GitHub Repository:** [career-success-predictor](https://github.com/AmenaUril78/career-success-predictor)
 **Email:** auril@asu.edu
 
 ---
