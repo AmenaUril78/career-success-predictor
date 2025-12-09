@@ -176,40 +176,6 @@ career-success-predictor/
 ├── README.md                              # Project documentation
 └── .gitignore                             # Git ignore file
 ```
-
----
-
-## 🚀 Installation & Setup
-
-### Prerequisites
-```bash
-Python 3.9+
-pip
-```
-
-### Local Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/YOUR-USERNAME/career-success-predictor.git
-cd career-success-predictor
-```
-
-2. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-3. **Run the application**
-```bash
-streamlit run app.py
-```
-
-4. **Open in browser**
-```
-http://localhost:8501
-```
-
 ---
 
 ## 📈 Model Performance
