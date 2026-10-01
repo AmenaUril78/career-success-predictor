@@ -53,22 +53,24 @@ This project involved systematic comparison of **7 classification algorithms** w
 
 | Rank | Model | F1-Score | AUC-ROC | Accuracy | Status |
 |------|-------|----------|---------|----------|--------|
-| 1 | **Logistic Regression** | **0.8966** 🥇 | 0.9282 | 88.37% | Evaluated |
-| 2 | **Naive Bayes** | **0.8966** 🥇 | 0.9231 | 88.37% | Evaluated |
-| 3 | SVM | 0.8772 | 0.9256 | 86.05% | Evaluated |
-| 4 | **Random Forest** | **0.8710** | **0.9256** | **86.05%** | **🚀 Deployed** |
+| 1 | **Random Forest** | **0.9000** 🥇 | **0.9187** | **86.05%** | **🚀 Deployed** |
+| 2 | Logistic Regression | 0.8966 | 0.9282 | 88.37% | Evaluated |
+| 3 | Naive Bayes | 0.8966 | 0.9231 | 88.37% | Evaluated |
+| 4 | SVM | 0.8772 | 0.9256 | 86.05% | Evaluated |
 | 5 | XGBoost | 0.8667 | **0.9410** 🏆 | 86.05% | Evaluated |
 | 6 | Neural Network | 0.8387 | 0.8179 | 83.72% | Evaluated |
 | 7 | k-NN | 0.8214 | 0.8744 | 81.40% | Evaluated |
 
+Random Forest figures are from the saved deployment package (`models/deployment_package_rf.pkl`).
+
 ### Model Selection Rationale
 
-**Random Forest** was selected for production deployment despite Logistic Regression achieving the highest F1-score (0.8966 vs 0.8710) because:
+**Random Forest** was selected for production deployment. It has the highest F1-score (0.9000), the primary optimization metric, and:
 
 1. **Interpretability:** Provides transparent feature importance for user trust and explainability
-2. **Balanced Performance:** Excellent metrics across all dimensions (F1: 0.8710, AUC: 0.9256)
+2. **Balanced Performance:** Strong metrics across all dimensions (F1: 0.9000, AUC: 0.9187, recall: 93.1%)
 3. **Production Stability:** Robust to outliers and handles non-linear relationships effectively
-4. **Minimal Performance Trade-off:** F1-score difference of 2.8% is not statistically significant with this sample size
+4. **Close Competition:** Logistic Regression and Naive Bayes are within 0.004 F1; with a 43-student test set, the top three models perform about the same
 
 ### Hyperparameter Optimization
 
@@ -109,16 +111,18 @@ Created 11 advanced features:
 
 ---
 
-## 💼 Business Impact
+## 💼 Potential Business Impact (Illustrative Estimate)
 
-### ROI Analysis (500 graduates/year)
+> These figures are a hypothetical scenario, not measured results. They assume a 15-point placement lift and $25,000 of value per placement; neither has been tested.
+
+### Illustrative ROI Scenario (500 graduates/year)
 
 **Current State:**
 - 68% placement rate (340 placed, 160 unemployed)
 - Lost alumni engagement value: ~$2M/year
 
-**With AI System:**
-- 15% improvement in placement rate
+**With AI System (assumed):**
+- Assumed 15-point improvement in placement rate
 - New rate: 83% (415 placed, 85 unemployed)
 - **75 additional successful placements**
 
@@ -158,8 +162,6 @@ Created 11 advanced features:
 - **Framework:** Streamlit
 - **Hosting:** Streamlit Cloud
 - **CI/CD:** Automated deployment from GitHub
-- **Uptime:** 99.9%
-- **Response Time:** <2 seconds
 
 ---
 
@@ -172,7 +174,6 @@ career-success-predictor/
 │   └── deployment_package_rf.pkl          # Complete deployment package
 ├── app.py                                 # Streamlit web application
 ├── requirements.txt                       # Python dependencies
-├── model_comparison_table.csv             # Performance comparison of all 7 models
 ├── README.md                              # Project documentation
 └── .gitignore                             # Git ignore file
 ```
@@ -186,8 +187,8 @@ career-success-predictor/
 - **Accuracy:** 86.05%
 - **Precision:** 87.10%
 - **Recall:** 93.10%
-- **F1-Score:** 0.8710
-- **AUC-ROC:** 0.9256 ⭐ (Excellent)
+- **F1-Score:** 0.9000
+- **AUC-ROC:** 0.9187 ⭐ (Excellent)
 
 **Confusion Matrix:**
 | **Actual** | **Predicted Not Placed** | **Predicted Placed** |
