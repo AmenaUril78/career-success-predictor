@@ -108,7 +108,7 @@ specialisation = st.sidebar.selectbox("MBA Specialization", ["Mkt&HR", "Mkt&Fin"
 mba_p = st.sidebar.slider("MBA Percentage", 40.0, 100.0, 65.0, 0.5)
 
 st.sidebar.markdown("---")
-predict_button = st.sidebar.button("🔍 Predict Placement Outcome", type="primary", use_container_width=True)
+predict_button = st.sidebar.button("🔍 Predict Placement Outcome", type="primary", width="stretch")
 
 # Main content area
 if predict_button:
@@ -168,12 +168,15 @@ if predict_button:
     prediction = model.predict(input_data)[0]
     prediction_proba = model.predict_proba(input_data)[0][1]
     
-    # Determine risk level
-    if prediction_proba < 0.3:
+    # Determine risk level.
+    # Class 1 = "Placed", so prediction_proba is the probability of placement.
+    # Risk is the probability of NOT being placed.
+    risk_score = 1 - prediction_proba
+    if risk_score < 0.3:
         risk_level = "LOW RISK ✅"
         risk_color = "success-box"
         recommendation = "STRONG PLACEMENT CANDIDATE"
-    elif prediction_proba < 0.6:
+    elif risk_score < 0.6:
         risk_level = "MEDIUM RISK ⚠️"
         risk_color = "warning-box"
         recommendation = "NEEDS TARGETED SUPPORT"
